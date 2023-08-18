@@ -1,4 +1,4 @@
-import PreviewPage from './components/checkout';
+import PreviewPage from './components/Checkout';
 
 function checkOutPage() {
   return (
