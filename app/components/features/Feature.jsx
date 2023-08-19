@@ -5,7 +5,7 @@ import Items from './components/Items';
 
 function Feature() {
   return (
-    <div className="section w-full h-auto mb-12 bg-white pt-[5rem]">
+    <div className="section w-full h-auto mb-12 section-feature pt-[5rem]">
       <div className="max-w-[45rem] pl-4 mx-auto text-left md:text-center lg:text-center">
         <Heading />
       </div>

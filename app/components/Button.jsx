@@ -8,7 +8,7 @@ function Button({ text, width, type }) {
       type={type}
       className={`${
         width ? 'w-full' : null
-      } p-2 text-center text-white transition duration-500 bg-indigo-600 rounded hover:bg-opacity-80`}
+      } transition-all hover:text-slate-200 duration-500 text-[#bdbcff] font-normal px-[24px] py-[12px] hover:bg-cyan-900 border-3 border-blue-300 rounded-full hover:cursor-pointer`}
     >
       {text}
     </button>

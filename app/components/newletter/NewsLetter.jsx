@@ -5,7 +5,6 @@ import Button from '../Button';
 import { useState } from 'react';
 
 function NewsLetter() {
-  const [loading, setIsLoading] = useState(false);
   const [email, setEmail] = useState('');
 
   const handleSubmit = async e => {
@@ -35,12 +34,12 @@ function NewsLetter() {
   };
 
   return (
-    <div className="section grid justify-items-start lg:justify-items-center grid-cols-1 p-4 gap-8 lg:p-[6rem] bg-fuchsia-100 md:grid-cols-2">
+    <div className="section section-newsLetter grid justify-items-start lg:justify-items-center grid-cols-1 p-4 gap-8 lg:p-[6rem]  md:grid-cols-2">
       <div>
-        <h1 className="text-2xl font-semibold lg:text-4xl">
+        <h1 className="text-2xl font-semibold lg:text-4xl main-heading">
           Want product news and updates?
         </h1>
-        <h1 className="text-2xl font-semibold lg:text-4xl">
+        <h1 className="text-2xl font-semibold lg:text-4xl main-heading">
           Sign up for newsLetter.
         </h1>
       </div>
@@ -49,13 +48,13 @@ function NewsLetter() {
           <input
             value={email}
             onChange={e => setEmail(e.target.value)}
-            className="rounded-md p-[0.5rem] w-full focus:outline-indigo-600 "
+            className="rounded-md bg-slate-800 placeholder:text-[#bdbcff] p-[0.5rem] w-full focus:outline-blue-300 "
             type="email"
             placeholder="Enter your email"
           />
           <Button type="submit" text="Subscribe" />
         </form>
-        <p>
+        <p className="main-heading">
           we care about your data. Read our{' '}
           <span className="text-indigo-600">privacy policy.</span>
         </p>

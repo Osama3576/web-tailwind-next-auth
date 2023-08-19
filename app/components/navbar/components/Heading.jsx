@@ -16,7 +16,7 @@ function Heading() {
       <div className="flex items-center justify-center gap-4 mt-10 font-semibold">
         <Link
           href="#"
-          className="transition-all hover:text-slate-200 duration-500 text-[#bdbcff] font-normal px-[24px] py-[12px] hover:bg-cyan-900 border-2 border-cyan-800 rounded-full hover:cursor-pointer"
+          className="transition-all hover:text-slate-200 duration-500 text-[#bdbcff] font-normal px-[24px] py-[12px] hover:bg-cyan-900 border-3 border-blue-300 rounded-full hover:cursor-pointer"
         >
           Get started
         </Link>

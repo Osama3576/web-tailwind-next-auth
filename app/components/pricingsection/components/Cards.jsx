@@ -3,8 +3,8 @@ import Link from 'next/link';
 import { TiTick } from 'react-icons/ti';
 function Cards() {
   return (
-    <div className="grid  justify-items-center items-center  grid-cols-1 gap-4 lg:gap-0  lg:grid-cols-3  py-[3rem] justify-center">
-      <div className="w-[23rem] lg:w-auto p-12 border border-fuchsia-200 rounded-xl lg:rounded">
+    <div className="grid  justify-items-center items-center text-slate-200  grid-cols-1 gap-4 lg:gap-0  lg:grid-cols-3  py-[3rem] justify-center">
+      <div className="w-[23rem] card  lg:w-auto p-12 border border-fuchsia-200 rounded-xl transition-all duration-500">
         <p className="mb-5 font-semibold">Freelancer</p>
         <p className="mb-5">
           The essentials to provide your best work for clients.
@@ -43,7 +43,7 @@ function Cards() {
         </div>
       </div>
 
-      <div className="w-[23rem] lg:w-auto p-12 border border-fuchsia-200 rounded-xl lg:rounded ">
+      <div className="w-[23rem] card lg:w-auto p-12 border border-fuchsia-200 rounded-xl transition-all duration-500 ">
         <div className="flex items-center justify-between">
           <p className="mb-5 font-semibold ">Startup</p>
           <p className="text-[10px] text-indigo-600 mb-5   rounded-full p-1 bg-indigo-50">
@@ -86,7 +86,7 @@ function Cards() {
         </div>
       </div>
 
-      <div className="w-[23rem] lg:w-auto p-12 border border-fuchsia-200 rounded-xl lg:rounded">
+      <div className="w-[23rem] card lg:w-auto p-12 border border-fuchsia-200 rounded-xl transition-all duration-500">
         <p className="mb-5 font-semibold">Enterprise</p>
         <p className="mb-5">
           The essentials to provide your best work for clients.
