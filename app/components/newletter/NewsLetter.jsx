@@ -35,7 +35,7 @@ function NewsLetter() {
   };
 
   return (
-    <div className="grid justify-items-start lg:justify-items-center grid-cols-1 p-4 gap-8 lg:p-[6rem] bg-fuchsia-100 md:grid-cols-2">
+    <div className="section grid justify-items-start lg:justify-items-center grid-cols-1 p-4 gap-8 lg:p-[6rem] bg-fuchsia-100 md:grid-cols-2">
       <div>
         <h1 className="text-2xl font-semibold lg:text-4xl">
           Want product news and updates?

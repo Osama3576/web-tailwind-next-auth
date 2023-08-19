@@ -2,7 +2,7 @@ import Cards from './components/Cards';
 
 function Pricing() {
   return (
-    <div className="py-[3rem]">
+    <div className="section py-[3rem]">
       <div className="max-w-[45rem] pl-4 mx-auto  text-center ">
         <p className="mb-2 text-sm font-semibold text-indigo-600">
           Pricing

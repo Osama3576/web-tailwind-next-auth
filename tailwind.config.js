@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      borderWidth: {
+        3: '3px',
+      },
       backgroundImage: {
         'hero-pattern': "url('/public/images/background.png')",
       },

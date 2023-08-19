@@ -5,13 +5,45 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
   /* position: relative; */
 }
 .feature-section {
-  background-image: url('../public/images/background.png');
+  /* background-image: url('../public/images/background.png'); */
+  background-color: #07090d;
+  background-image: radial-gradient(
+    circle farthest-side at 80% 15%,
+    rgba(70, 122, 255, 0.36),
+    rgba(0, 0, 0, 0) 53%
+  );
   width: 100%;
 
   background-repeat: no-repeat;
   background-size: cover;
   height: auto;
 }
+.section {
+  transition: all 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.nav-ul {
+  background-image: url('../public/images/bgnav.webp');
+}
+.main-heading {
+  background-image: linear-gradient(114deg, #f6f5ff, #dcdbff 70%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* grid-column-gap: 10px;
+grid-row-gap: 10px;
+background-color: #07090d;
+background-image: radial-gradient(circle farthest-side at 80% 15%, rgba(70, 122, 255, .36), rgba(0, 0, 0, 0) 53%);
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+padding: 0 0 32px;
+font-weight: 500;
+display: fle */

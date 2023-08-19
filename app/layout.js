@@ -1,3 +1,4 @@
+import Script from 'next/script';
 import AuthContext from './context/AuthContext';
 import ToasterContext from './context/ToasterContext';
 import './globals.css';

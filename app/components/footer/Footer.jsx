@@ -4,7 +4,7 @@ import Right from './components/Right';
 
 function Footer() {
   return (
-    <div className="bg-[#111827] text-cyan-50 p-1 lg:px-20 lg:pt-20">
+    <div className="section bg-[#111827] text-cyan-50 p-1 lg:px-20 lg:pt-20">
       <div className="grid grid-col-1 lg:grid-cols-2 lg:pb-12">
         <Left />
         <Right />

@@ -7,9 +7,9 @@ function LoginBtn({ text }) {
     <>
       <Link
         href="/login"
-        className="hidden font-semibold hover:cursor-pointer lg:block "
+        className="hidden transition-all duration-500 text-[#bdbcff] font-normal px-[24px] py-[12px] hover:bg-cyan-900 border-2 border-cyan-800 rounded-full hover:cursor-pointer lg:block "
       >
-        {text} &rarr;
+        {text}
       </Link>
     </>
   );
