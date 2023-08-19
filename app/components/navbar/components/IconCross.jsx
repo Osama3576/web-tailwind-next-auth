@@ -4,7 +4,7 @@ function IconCross({ setIsOpen }) {
   return (
     <RxCross1
       onClick={() => setIsOpen(false)}
-      className="absolute z-20 top-[2%] right-[5%] hover:cursor-pointer lg:hidden"
+      className="absolute z-20 top-[2%] right-[5%] hover:cursor-pointer text-[#bdbcff] lg:hidden"
       size="1.5rem"
     />
   );

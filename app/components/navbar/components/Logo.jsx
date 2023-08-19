@@ -2,7 +2,7 @@
 'use client';
 function Logo() {
   return (
-    <div className="hover:cursor-pointer op">
+    <div className="hover:cursor-pointer m-[1rem]">
       <h1 className="text-[#bdbcff] tracking-[8px] font-medium">
         DEVPROFOLIO{' '}
       </h1>

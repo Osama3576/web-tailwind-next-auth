@@ -4,7 +4,7 @@ function IconMenu({ setIsOpen }) {
   return (
     <BiMenu
       onClick={() => setIsOpen(true)}
-      className="absolute z-20 top-[2%] right-[5%] hover:cursor-pointer lg:hidden"
+      className="absolute z-20 top-[2%] right-[5%] hover:cursor-pointer text-[#bdbcff] lg:hidden"
       size="2rem"
     />
   );
