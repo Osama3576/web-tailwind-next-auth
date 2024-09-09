@@ -40,32 +40,32 @@ function Form() {
     },
   });
 
-  const onSubmit = data => {
-    setIsLoading(true);
-    if (variant === 'Register') {
-      axios
-        .post('/api/register', data)
-        .then(() => signIn('credentials', data))
-        .catch(() => toast.error('Please fill the form carefully'))
-        .finally(() => {
-          setIsLoading(false);
-          if (data) toast.success('successfully registered');
-        });
-    }
-    if (variant === 'Login') {
-      signIn('credentials', {
-        ...data,
-        redirect: false,
+  const onSubmit = (data) => {
+  setIsLoading(true);
+  if (variant === 'Register') {
+    axios
+      .post('/api/register', data)
+      .then(() => {
+        toast.success('successfully registered');
+        return signIn('credentials', data);
       })
-        .then(callback => {
-          if (callback?.error) toast.error('invalid Credentials');
-          if (callback?.ok && !callback?.error)
-            toast.success('Sucessfully logged in');
-          router.push('/protected');
-        })
-        .finally(() => setIsLoading(false));
-    }
-  };
+      .catch(() => toast.error('Please fill the form carefully'))
+      .finally(() => setIsLoading(false));
+  }
+  if (variant === 'Login') {
+    signIn('credentials', {
+      ...data,
+      redirect: false,
+    })
+      .then((callback) => {
+        if (callback?.error) toast.error('invalid Credentials');
+        if (callback?.ok && !callback?.error)
+          toast.success('Sucessfully logged in');
+        router.push('/protected');
+      })
+      .finally(() => setIsLoading(false));
+  }
+};
 
   const socialAction = action => {
     setIsLoading(true);
