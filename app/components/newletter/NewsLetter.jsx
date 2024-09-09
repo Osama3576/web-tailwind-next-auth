@@ -48,7 +48,7 @@ function NewsLetter() {
           <input
             value={email}
             onChange={e => setEmail(e.target.value)}
-            className="rounded-md bg-slate-800 placeholder:text-[#bdbcff] p-[0.5rem] w-full focus:outline-blue-300 "
+            className="rounded-md bg-slate-800  text-white placeholder:text-[#bdbcff] p-[0.5rem] w-full focus:outline-blue-300 "
             type="email"
             placeholder="Enter your email"
           />
